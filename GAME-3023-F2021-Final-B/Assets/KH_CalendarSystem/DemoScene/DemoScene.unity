@@ -11709,6 +11709,11 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 3488975603838719603, guid: b5e166ca60c96784e8a1e300a23c5395, type: 3}
   m_PrefabInstance: {fileID: 1033376635}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1062872753 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5799025816887434476, guid: 6f1aebeb7e9e2f844a6101f396d2115e, type: 3}
+  m_PrefabInstance: {fileID: 527937656}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1121324175
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -22120,6 +22125,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2092674073}
   - component: {fileID: 2092674074}
+  - component: {fileID: 2092674075}
   m_Layer: 0
   m_Name: CalendarManager
   m_TagString: Untagged
@@ -22153,16 +22159,122 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c678ec5c99d12f844af21a9e079dee96, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  game_start_time_: {x: 13, y: 59}
-  game_start_date_: {x: 29, y: 11, z: 2021}
+  game_start_time_: {x: 12, y: 0}
+  game_start_date_: {x: 5, y: 12, z: 2021}
   game_tick_speed_: 60
-  game_speed_: 2
+  game_speed_: 3
+  calendar_event_table_: {fileID: 11400000, guid: e479c1bd8df102848bb63fa4a51ae97e, type: 2}
+  global_light_: {fileID: 2036757915}
+  weather_vfx_list_:
+  - {fileID: 2099953480}
+  - {fileID: 1062872753}
   calendar_time_text_: {fileID: 299789803}
   calendar_date_text_: {fileID: 640735104}
   calendar_day_group_: {fileID: 1832979174}
   curr_day_color_: {r: 0, g: 1, b: 0.8471594, a: 1}
   default_day_color_: {r: 0.7, g: 0.7, b: 0.7, a: 1}
   day_not_in_month_color_: {r: 0.4, g: 0.4, b: 0.4, a: 1}
+--- !u!82 &2092674075
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2092674072}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 0}
+  m_audioClip: {fileID: 0}
+  m_PlayOnAwake: 0
+  m_Volume: 1
+  m_Pitch: 1
+  Loop: 0
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+--- !u!1 &2099953480 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5056951705168689871, guid: b2f3511f2f65c45428b60588d98440e1, type: 3}
+  m_PrefabInstance: {fileID: 967073066}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &2122006395
 GameObject:
   m_ObjectHideFlags: 0

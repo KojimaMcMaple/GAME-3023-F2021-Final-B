@@ -1,0 +1,21 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b086e562dd7ebc4687f550ceeb3114c, type: 3}
+  m_Name: CalendarEventTable
+  m_EditorClassIdentifier: 
+  table_:
+  - {fileID: 11400000, guid: 5afc4e6e4445f444f915e69996ae45ec, type: 2}
+  - {fileID: 11400000, guid: 46443ea3da5b07a4d832a263678415ba, type: 2}
+  - {fileID: 11400000, guid: e85d62b942ca2ff40bff1f503b1891b9, type: 2}
+  - {fileID: 11400000, guid: 60c1eea4756e01b498d423d56ce0693e, type: 2}
+  - {fileID: 11400000, guid: 5ca528ebe69b5f4488add4a1ec705a28, type: 2}
+  - {fileID: 11400000, guid: aa5eed94d98d1984c8206d3aca4761c9, type: 2}
