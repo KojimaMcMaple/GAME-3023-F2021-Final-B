@@ -35,7 +35,7 @@ public class CalendarManager : MonoBehaviour
     [SerializeField] private Color default_day_color_ = new Color(0.8f, 0.8f, 0.8f, 1.0f);
     [SerializeField] private Color day_not_in_month_color_ = new Color(0.4f, 0.4f, 0.4f, 1.0f);
 
-    void Awake()
+    void Start()
     {
         audio_source_ = GetComponent<AudioSource>();
 

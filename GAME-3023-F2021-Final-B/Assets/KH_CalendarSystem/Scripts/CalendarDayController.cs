@@ -9,13 +9,17 @@ public class CalendarDayController : MonoBehaviour
 {
     [SerializeField] private TMP_Text day_text_;
     [SerializeField] private TMP_Text event_text_;
-    private Image image_;
+    private Image image_ = null;
     private Vector3Int date_;
     private List<int> event_idx_list_ = new List<int>(); //idx of CalendarEventTable
 
     private void Awake()
     {
         image_ = GetComponent<Image>();
+        if (image_ == null)
+        {
+            Debug.Log(">>> Failed to find Image component!");
+        }
     }
 
     public void SetEventText(string text)
